@@ -1,0 +1,3 @@
+-- BackupJob.sql - instructions for creating SQL Agent job to backup DB daily at 4 PM
+-- Example T-SQL step:
+-- BACKUP DATABASE [LibraryDB] TO DISK = N'D:\SQLBackups\LibraryDB_FULL.bak' WITH INIT, NAME = N'LibraryDB-Full Database Backup', STATS = 10;
