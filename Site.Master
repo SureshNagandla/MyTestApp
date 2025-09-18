@@ -51,14 +51,22 @@
                         <li id="liRegister" runat="server" class="nav-item">
                             <a class="nav-link" runat="server" href="~/Pages/Protected/Admin/Register.aspx">Register User</a>
                         </li>
+                        <li id="liUsers" runat="server" class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Pages/Protected/Admin/Users">Users</a>
+                        </li>
                         <li id="liBooks" runat="server" class="nav-item">
                             <a class="nav-link" runat="server" href="~/Pages/Protected/Book/Books">Books</a>
                         </li>
+                        <li id="liBorrow" runat="server" class="nav-item">
+                            <a class="nav-link" runat="server" href="~/Pages/Protected/Borrow/BorrowRecords">BorrowRecords</a>
+                        </li>
+
 
                      <!--    <li class="nav-item"><a class="nav-link" runat="server" href="~/Pages/Protected/Employee/Employees">Employees</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Pages/Protected/EmployeesCrud">EmployeesOld</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Pages/Protected/book/Books">Books</a></li>-->
                          <li class="nav-item"><a class="nav-link" runat="server" href="~/Pages/Protected/Borrow/Borrow">Borrow</a></li>
+
                          <li class="nav-item"><a class="nav-link" runat="server" href="~/Pages/Protected/MyBooks/MyBooks">My Books</a></li>
                        <!--  <li class="nav-item"><a class="nav-link" runat="server" href="~/Pages/Protected/Employee/Employees">Employees</a></li>
                         <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>-->

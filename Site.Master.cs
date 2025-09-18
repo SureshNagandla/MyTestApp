@@ -15,7 +15,9 @@ namespace WebApplication2
 
             // Show Register menu only for Admin
             liRegister.Visible = isAuthenticated && Context.User.IsInRole("Admin");
+            liUsers.Visible = isAuthenticated && Context.User.IsInRole("Admin");
             liBooks.Visible = isAuthenticated & (Context.User.IsInRole("Admin") || Context.User.IsInRole("Librarian"));
+            liBorrow.Visible = isAuthenticated && Context.User.IsInRole("Librarian");
 
             // Toggle login/logout buttons
             btnLogout.Visible = isAuthenticated;

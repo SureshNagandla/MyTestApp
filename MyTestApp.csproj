@@ -364,11 +364,13 @@
     <Content Include="packages\WebGrease.1.6.0\tools\WG.EXE" />
     <Content Include="Pages\Error\GenericError.aspx" />
     <Content Include="Pages\Protected\Admin\Register.aspx" />
+    <Content Include="Pages\Protected\Admin\Users.aspx" />
     <Content Include="Pages\Protected\Book\Books.aspx" />
     <Content Include="Pages\Protected\Book\Create.aspx" />
     <Content Include="Pages\Protected\Book\Details.aspx" />
     <Content Include="Pages\Protected\Book\Edit.aspx" />
     <Content Include="Pages\Protected\Borrow\Borrow.aspx" />
+    <Content Include="Pages\Protected\Borrow\BorrowRecords.aspx" />
     <Content Include="Pages\Protected\EmployeesCrud.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
@@ -630,6 +632,13 @@
     <Compile Include="Pages\Protected\Admin\Register.aspx.designer.cs">
       <DependentUpon>Register.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Protected\Admin\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Protected\Admin\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Pages\Protected\Book\Books.aspx.cs">
       <DependentUpon>Books.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -664,6 +673,13 @@
     </Compile>
     <Compile Include="Pages\Protected\Borrow\Borrow.aspx.designer.cs">
       <DependentUpon>Borrow.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Protected\Borrow\BorrowRecords.aspx.cs">
+      <DependentUpon>BorrowRecords.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pages\Protected\Borrow\BorrowRecords.aspx.designer.cs">
+      <DependentUpon>BorrowRecords.aspx</DependentUpon>
     </Compile>
     <Compile Include="Pages\Protected\EmployeesCrud.aspx.cs">
       <DependentUpon>EmployeesCrud.aspx</DependentUpon>

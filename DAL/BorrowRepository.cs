@@ -57,5 +57,36 @@ namespace MyTestApp.DAL
             }
             return dt;
         }
+        public void MarkAsReturned(int borrowId)
+        {
+            using (var conn = new SqlConnection(_connString))
+            using (var cmd = new SqlCommand("sp_ReturnBook", conn))
+            {
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@BorrowId", borrowId);
+                conn.Open();
+                cmd.ExecuteNonQuery();
+            }
+        }
+        public DataTable GetAllBorrowRecords()
+        {
+            using (var conn = new SqlConnection(_connString))
+            using (var cmd = new SqlCommand(@"
+        SELECT br.Id, u.Username, b.Title, br.BorrowDate, br.ReturnDate
+        FROM BorrowRecords br
+        JOIN Users u ON br.UserId = u.Id
+        JOIN Books b ON br.BookId = b.BookId
+        ORDER BY br.BorrowDate DESC", conn))
+            {
+                var dt = new DataTable();
+                using (var da = new SqlDataAdapter(cmd))
+                {
+                    da.Fill(dt);
+                }
+                return dt;
+            }
+        }
+
+
     }
 }
